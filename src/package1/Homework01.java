@@ -1,7 +1,7 @@
 package package1;
 
 public class Homework01 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
 
         int mercedes = (1 + (3 * (2 - 4)) % 3 + (11 - 7) * 2) + (3 - 5) * 3;
 //        9+-6=3
@@ -49,9 +49,9 @@ public class Homework01 {
 //
 //            4)
 //    Coздать две переменные типа int:
-    int a = 7;
-    int b = 9;
-    a = a+b;
+//    int a = 7;
+//    int b = 9;
+//    a = a + b;
 
 //    Поменять между собой значения переменных a и b.
 //    Создавать новые переменные нельзя.
