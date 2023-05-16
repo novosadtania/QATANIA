@@ -8,7 +8,7 @@ public class Homework02 {
 //    Создать строку string3 на основе string2 которое будет содержать значение
 //   "This line that don't want to cut, cause it is perfect".
 //    Вывести на консоль каждое сообщение и его длину.
-        int lenthOfString;
+       /* int lenthOfString;
         String string1 = "This line that i want to cut, cause it is too long";
         lenthOfString = string1.length();
         System.out.println(string1 + " " + lenthOfString);
@@ -17,7 +17,7 @@ public class Homework02 {
         System.out.println(string2 + " " + lenthOfString);
         String string3 = string2.replace("that", "don't") + "it is perfect";
         lenthOfString = string3.length();
-        System.out.println(string3 + " " + lenthOfString);
+        System.out.println(string3 + " " + lenthOfString);*/
 //
 //
 //            2. Создать строку string = "Testing , is my favourite job"
@@ -27,7 +27,7 @@ public class Homework02 {
 //    и т.д.
 //    Вывести на консоль true, если первое слово длиннее остальных, в
 //    противном случае вывести false.
-        String string = "Testing , is my favourite job";
+      /*  String string = "Testing , is my favourite job";
         String[] arrayOfString = string.split("\\s");
         int size = arrayOfString.length;
         String word1 = string.split("\\s")[0];
@@ -39,7 +39,7 @@ public class Homework02 {
         String word4 = string.split("\\s")[4];
         System.out.println(word4);
         String word5 = string.split("\\s")[5];
-        System.out.println(word5);
+        System.out.println(word5);*/
 
 
 //            3. При применении к массиву строк поля length, можно узнать сколько
@@ -60,11 +60,11 @@ public class Homework02 {
 //    используя метод split и информацию по поводу поля length
 //
 //    Решить данную задачу с учетов верхнего и нижнего регистра символа 'a'.*/}
-        String myString = "Completely random text in English. In it, we just need to determine how many times the character 'a' occurs there. And we can use the split method and the length method.";
+      /*  String myString = "Completely random text in English. In it, we just need to determine how many times the character 'a' occurs there. And we can use the split method and the length method.";
         String[] arrayOfString = myString.split("a");
         int size = arrayOfString.length;
         System.out.println(myString);
-
+*/
     }
 }
 
