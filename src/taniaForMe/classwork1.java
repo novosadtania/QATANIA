@@ -1,4 +1,4 @@
-package package1;
+package taniaForMe;
 
 public class classwork1 {
     public static void main(String[] args) {

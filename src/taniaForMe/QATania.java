@@ -1,6 +1,5 @@
-package package1;
+package taniaForMe;
 
-import java.util.Date;
 import java.util.Scanner;
 public class QATania {
     public static void main(String[] args){
