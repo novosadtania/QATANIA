@@ -1,4 +1,7 @@
 package homeworkLesson5;
+
+import java.util.Scanner;
+
 /*4)Создать три массива.
         Первый будет состоять из следующих имен:
         "Петя", "Маша", "Алёна", "Федя", "Саша", "Антон", "Глеб".
@@ -25,6 +28,12 @@ public class Homework4 {
         arrayInt[4] = 18;
         arrayInt[5] = 20;
         String[] arrayString2 = {"школу", "магазин", "церковь", "тренажерный зал", "кино", "поликлинику"};
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введіть 3 числа від 0 до 5 : ");
+        int input1= scanner.nextInt();
+        int input2= scanner.nextInt();
+        int input3= scanner.nextInt();
+        System.out.println(arrayString1[input1] + " буде йти в " + arrayString2[input2] + " в " + arrayInt[input3] + ":00.");
 
         }
     }
