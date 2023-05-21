@@ -1,29 +1,37 @@
 package homeworkLesson5;
 
 
+import java.util.Random;
+import java.util.Scanner;
+
 /*Есть одномерный массив из 10 элементов, заполнен-
         ный случайными числами. Пользователь вводит с клавиатуры
         число. Программа показывает есть ли такое число в созданном
         до этого массиве.*/
 public class Homework5 {
     public static void main(String[] args) {
-    }
-      /*  Scanner scanner = new Scanner(System.in);
+
+
+        int[] array = new int[10];
         Random random = new Random();
-        System.out.println("Inpur your figure : ");
-        int a = scanner.nextInt();
-        int[] arrayInt = new int[10];
-        for (int i = 0; i < arrayInt.length; i++) {
-            int u = random.nextInt(10);
-            System.out.print(u + " ");
+        for (int i = 0; i < array.length; i++) {
+            array[i] = random.nextInt(100);
+//            System.out.print("Массив" + array[i] + " ");
         }
-        int minValue = arrayInt[0];
-        for (int i = 0; i < arrayInt.length; i++) {
-            if (arrayInt[i] == a) {
-                System.out.println("ghghghgh");
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("\nВведите число: ");
+        int number = scanner.nextInt();
+        boolean found = false;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == number) {
+                found = true;
+                break;
             }
         }
-        System.out.println("\n" + "Minimum value is: " + minValue);
-            }
-        }*/
+        if (found) {
+            System.out.println("Число " + number + " найдено в массиве.");
+        } else {
+            System.out.println("Число " + number + " не найдено в массиве.");
+        }
+    }
 }
