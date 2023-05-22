@@ -24,6 +24,7 @@ public class Homework1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
+        System.out.println("Let the game begin! ");
         System.out.println("Write your name : ");
         String name = scanner.nextLine();
         System.out.println("Let the game begin," + name);
