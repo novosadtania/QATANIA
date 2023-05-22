@@ -16,10 +16,10 @@ public class Homework5 {
         Random random = new Random();
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(100);
-//            System.out.print("Массив" + array[i] + " ");
+            System.out.print(array[i] + " ");
         }
         Scanner scanner = new Scanner(System.in);
-        System.out.print("\nВведите число: ");
+        System.out.print("Введіть число: ");
         int number = scanner.nextInt();
         boolean found = false;
         for (int i = 0; i < array.length; i++) {
@@ -29,9 +29,9 @@ public class Homework5 {
             }
         }
         if (found) {
-            System.out.println("Число " + number + " найдено в массиве.");
+            System.out.println("Число " + number + " знайдено в масиві.");
         } else {
-            System.out.println("Число " + number + " не найдено в массиве.");
+            System.out.println("Число " + number + " не знайдено в масиві.");
         }
     }
 }
