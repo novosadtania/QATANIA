@@ -32,16 +32,22 @@ public class Homework1 {
         int u = random.nextInt(100);
         int[] arrayInt = new int[100];
         System.out.println("Рандомне число : " + u);
-        int result = 0;
-        for (int i = 0; i < arrayInt.length; i++) {
-            result = result + arrayInt[i];
-        }
-        if (a < u) {
-            System.out.println("Your number is too small. Please, try again.. ");
-        } else if (a > u) {
-            System.out.println("Your number is too big. Please, try again..");
-        } else {
-            System.out.println("Congratulations," + name);
+        while (a != u) {
+            if (a < u) {
+                System.out.println("Your number is too small. Please, try again.. ");
+                int aa = scanner.nextInt();
+                a = aa;
+            }
+            if (a > u) {
+                System.out.println("Your number is too big. Please, try again..");
+                int ab = scanner.nextInt();
+                a = ab;
+            }
+            if (a == u) {
+                System.out.println("Congratulations," + name + "!");
+                break;
+            }
+
         }
     }
 }
