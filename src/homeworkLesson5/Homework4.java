@@ -19,7 +19,7 @@ import java.util.Scanner;
         "Маша будет идти в тренажерный зал в 14:00"*/
 public class Homework4 {
     public static void main(String[] args) {
-        String[] arrayString1 = {"Петя", "Маша", "Алёна", "Федя", "Саша", "Антон", "Глеб"};
+        String[] arrayString1 = {"Петя", "Маша", "Алёна", "Федя", "Саша", "Антон",};
         int[] arrayInt = new int[6];
         arrayInt[0] = 10;
         arrayInt[1] = 12;
