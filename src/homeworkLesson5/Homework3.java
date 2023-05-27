@@ -24,6 +24,11 @@ public class Homework3 {
             }
             System.out.println("Скільки ви хочете загрузити : ");
             int vaga2 = in.nextInt();
+            if ((vaga-vaga2)<=5) {
+                System.out.println("Неможливо прийняти таку  вагу ");
+                System.out.println("Залишилося місця на " + (vaga - vaga1));
+                continue;
+            }
             if (vaga2 <= 5) {
                 System.out.println("Неможливо прийняти таку малу вагу ");
                 System.out.println("Залишилося місця на " + (vaga - vaga1));

@@ -14,7 +14,7 @@ public class Homework1 {
         while (true) {
             System.out.println("Введіть ваше слово(для зупинки напишіть STOP)");
             String input = scanner.nextLine();
-            if (input.equals("STOP")) {
+            if (input.toUpperCase().equals("STOP")) {
                 break;
             }
             result = result + " " + input;
