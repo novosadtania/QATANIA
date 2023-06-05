@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class Homework4 {
     public static void main(String[] args) {
-        System.out.println("size");
+        System.out.println("Введіть 2 цифри розмірності масива : ");
         Scanner scanner = new Scanner(System.in);
         int number1 = scanner.nextInt();
         int number2 = scanner.nextInt();
@@ -21,13 +21,17 @@ public class Homework4 {
                 arrayInt[i][a] = (int) ((Math.random() * 1000));
                 Arrays.sort(arrayInt[i]);
                 System.out.print(arrayInt[i][a] + " ,");
-
             }
             System.out.print("\b\b");
             System.out.println();
+            System.out.println();
+
+        }  String [] a = new String [arrayInt.length[number2] - 1];
+        System.out.println(Arrays.toString(a));
+//        int arrays[] = new int[number1];
+//        Arrays.fill(arrays, arrayInt.index);
+//        System.out.println(Arrays.toString(arrays));
 
 
     }
-
-
-}}
+}

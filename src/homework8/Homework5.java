@@ -19,7 +19,6 @@ package homework8;
            5 | * | - | * | - | - |
 */
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Homework5 {
@@ -64,25 +63,31 @@ public class Homework5 {
             System.out.println();
         }
         Scanner scanner = new Scanner(System.in);
-
         while (true) {
             System.out.println("All Set. Get ready to rumble!");
             System.out.println("Insert number(0-4):");
             String number1 = scanner.nextLine();
             System.out.println("Insert number(0-4):");
             String number2 = scanner.nextLine();
-            if (number1.equals("1") && number2.equals("4")) {
-                System.out.println("You have won!");
-                System.out.println(Arrays.deepToString(name)+", ");
-            break;
-            }
+
             reseult[Integer.parseInt(number1)][Integer.parseInt(number2)] = name[Integer.parseInt(number1)][Integer.parseInt(number2)];
-            for (String[] singleArray : reseult) {
-                for (String text : singleArray) {
+            for (String[] singleArray2 : reseult) {
+                for (String text : singleArray2) {
                     System.out.print(text + ", ");
                 }
                 System.out.print("\b\b");
                 System.out.println();
+            }
+            if (number1.equals("1") && number2.equals("4")) {
+                System.out.println("You have won!");
+                for (String[] singleArray33 : name) {
+                    for (String text33 : singleArray33) {
+                        System.out.print(text33 + ", ");
+                    }
+                    System.out.print("\b\b");
+                    System.out.println();
+                }
+                break;
             }
         }
     }
