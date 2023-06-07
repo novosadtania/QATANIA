@@ -1,4 +1,7 @@
 package homeworkLesson9.tree;
+
+import java.util.Objects;
+
 /* 2) Создать класс Tree с перегруженными конструкторами.
     В классе есть Tree есть поля:
     String type; int height, int coutOfsticks, String colour;
@@ -39,8 +42,60 @@ public class Tree {
         this.colour = "Жовтий";
     }
 
-
-    public Tree Tree (String type) {
-return new Tree();
+    @Override
+    public String toString() {
+        return "Tree: " +
+                "type = " + type + ",\n" +
+                "height = " + height + ",\n" +
+                "coutOfsticks = " + coutOfsticks + ",\n" +
+                "colour = " + colour + ".";
     }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public int getCoutOfsticks() {
+        return coutOfsticks;
+    }
+
+    public void setCoutOfsticks(int coutOfsticks) {
+        this.coutOfsticks = coutOfsticks;
+    }
+
+    public String getColour() {
+        return colour;
+    }
+
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Tree tree = (Tree) o;
+        return height == tree.height && coutOfsticks == tree.coutOfsticks && Objects.equals(type, tree.type) && Objects.equals(colour, tree.colour);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(type, height, coutOfsticks, colour);
+    }
+
+
 }
+
