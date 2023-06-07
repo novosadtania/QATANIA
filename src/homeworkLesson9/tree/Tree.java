@@ -40,7 +40,7 @@ public class Tree {
     }
 
 
-    public Tree (String type) {
-
+    public Tree Tree (String type) {
+return new Tree();
     }
 }
