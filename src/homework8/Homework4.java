@@ -10,28 +10,33 @@ import java.util.Scanner;
 
 public class Homework4 {
     public static void main(String[] args) {
-        System.out.println("Введіть 2 цифри розмірності масива : ");
         Scanner scanner = new Scanner(System.in);
-        int number1 = scanner.nextInt();
-        int number2 = scanner.nextInt();
-        int[][] arrayInt = new int[number1][number2];
-
-        for (int i = 0; i < arrayInt.length; i++) {
-            for (int a = 0; a < arrayInt[i].length; a++) {
-                arrayInt[i][a] = (int) ((Math.random() * 1000));
-                Arrays.sort(arrayInt[i]);
-                System.out.print(arrayInt[i][a] + " ,");
+        System.out.println("Insert number 1 : ");
+        int first = scanner.nextInt();
+        System.out.println("Insert number 2 : ");
+        int second = scanner.nextInt();
+        int[][] doubleArray = new int[first][second];
+        for (int[] singleArray : doubleArray) {
+            for (int i = 0; i < singleArray.length; i++) {
+                singleArray[i] = (int) (Math.random() * 1001);
             }
-            System.out.print("\b\b");
-            System.out.println();
-            System.out.println();
+        }
+        System.out.println(Arrays.deepToString(doubleArray));
 
-        }  String [] a = new String [arrayInt.length[number2] - 1];
-        System.out.println(Arrays.toString(a));
-//        int arrays[] = new int[number1];
-//        Arrays.fill(arrays, arrayInt.index);
-//        System.out.println(Arrays.toString(arrays));
+        int[] finalArray = new int[first];
+        int count = 0;
+        for (int a = 0; a < doubleArray.length; a++) {
+            int max = doubleArray[a][0];
+            for (int b = 0; b < doubleArray[a].length; b++) {
+                if (max < doubleArray[a][b]) {
+                    max = doubleArray[a][b];
+                }
+                finalArray[count] = max;
+            }
+            count = count + 1;
+        }
 
+        System.out.println(Arrays.toString(finalArray));
 
     }
 }
