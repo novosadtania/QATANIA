@@ -1,4 +1,4 @@
-package homeworkLesson9;
+package homeworkLesson9.computer;
 
 import java.util.Objects;
 

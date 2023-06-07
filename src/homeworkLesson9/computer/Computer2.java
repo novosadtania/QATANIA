@@ -1,4 +1,6 @@
-package homeworkLesson9;
+package homeworkLesson9.computer;
+
+import homeworkLesson9.computer.Computer;
 
 public class Computer2 {
     public static void main(String[] args) {
