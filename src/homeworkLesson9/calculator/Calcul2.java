@@ -14,7 +14,6 @@ public class Calcul2 {
             double number1 = scanner.nextDouble();
             String symbol = scanner.next();
             double number2 = scanner.nextDouble();
-String stop = "stop";
             if (symbol.equalsIgnoreCase("stop")) {
                 break;
             }
