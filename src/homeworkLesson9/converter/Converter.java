@@ -6,4 +6,34 @@ package homeworkLesson9.converter;
     У данного класса должен быть только один конструктор, в параметрах которого можно указать его имя.
     А также только один метод геттер для получения информации о названии данного конвертра.*/
 public class Converter {
+    private byte aByte;
+    private short aShort;
+    private int anInt;
+    private long aLong;
+    private char aChar;
+    private float aFloat;
+    private double aDouble;
+    private String string;
+    private String name;
+    private boolean aBoolean;
+
+    public Converter(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String toString() {
+        return name;
+    }
+
+    public int convertToInt(byte aByte, short aShort, int anInt, long aLong, char aChar, float aFloat, double aDouble, String string) {
+        return ;
+
+
 }
+
+    }

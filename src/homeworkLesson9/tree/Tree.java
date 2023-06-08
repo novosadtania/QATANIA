@@ -42,6 +42,10 @@ public class Tree {
         this.colour = "Жовтий";
     }
 
+    public Tree(String type, Tree tree) {
+        this.type = type;
+    }
+
     @Override
     public String toString() {
         return "Tree: " +
