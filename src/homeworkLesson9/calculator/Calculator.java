@@ -1,4 +1,10 @@
 package homeworkLesson9.calculator;
+
+import org.w3c.dom.CDATASection;
+
+import java.util.Objects;
+import java.util.Scanner;
+
 /*4) Создать класс калькулятор.
     В нем создать методы:
     summ, minus, multiply, division.
@@ -21,4 +27,70 @@ package homeworkLesson9.calculator;
     Перед закрытием на консоль должно выводится сообщение:
     "Калькулятор закрыт".*/
 public class Calculator {
+    private double number1;
+    private double number2;
+
+    public static void suma(double number1, double number2) {
+        System.out.println("Результат : " + (number1 + number2));
+    }
+
+    public static void rizn(double number1, double number2) {
+        System.out.println("Результат : " + (number1 - number2));
+    }
+
+    public static void mnozh(double number1, double number2) {
+        System.out.println("Результат : " + (number1 * number2));
+    }
+
+    public static void dil(double number1, double number2) {
+        System.out.println("Результат : " + (number1 / number2));
+    }
+
+    public static void start() {
+        System.out.println("Калькулятор запущено! Введіть Номер 1, потім \"+\" або \"-\" або \"*\" або  \"/\", потім Номер 2: ");
+    }
+
+    public double getNumber1() {
+        return number1;
+    }
+
+    public void setNumber1(double number1) {
+        this.number1 = number1;
+    }
+
+    public double getNumber2() {
+        return number2;
+    }
+
+    public Calculator(double number1, double number2) {
+        this.number1 = number1;
+        this.number2 = number2;
+    }
+
+    public void setNumber2(double number2) {
+        this.number2 = number2;
+
+    }
+
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        start();
+        double number1 = scanner.nextDouble();
+        String symbol = scanner.next();
+        double number2 = scanner.nextDouble();
+        Calculator calculator = new Calculator(number1, number2);
+        if (Objects.equals(symbol, "+")) {
+            Calculator.suma(number1, number2);
+        } else if (Objects.equals(symbol, "-")) {
+            Calculator.rizn(number1, number2);
+        } else if (Objects.equals(symbol, "*")) {
+            Calculator.mnozh(number1, number2);
+        } else if (Objects.equals(symbol, "/")) {
+            Calculator.dil(number1, number2);
+        }
+    }
 }
+
+
