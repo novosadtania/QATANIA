@@ -11,6 +11,9 @@ public class Main4 {
         Tree tree3 = new Tree();
         System.out.println(tree3);
         System.out.println("------------------------");
+        Tree tree4= new Tree("Dub");
+        System.out.println(tree4);
+
     }
 
 }

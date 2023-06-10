@@ -36,16 +36,17 @@ public class Tree {
         this.colour = colour;
     }
 
-    public Tree() {
+
+
+    public Tree () {
         this.height = 350;
         this.coutOfsticks = 29;
         this.colour = "Жовтий";
     }
-
-    public Tree(String type, Tree tree) {
+    public Tree(String type) {
+        this(350,29, "Жовтий");
         this.type = type;
     }
-
     @Override
     public String toString() {
         return "Tree: " +
