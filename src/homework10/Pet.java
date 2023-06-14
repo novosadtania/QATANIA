@@ -1,6 +1,7 @@
 package homework10;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Pet {
 private String species;
@@ -9,20 +10,19 @@ private int age;
 private int trickLevel;
  private String[] habits;
  public void eat (){
-     System.out.println("Я їм!");
+     System.out.println("I'm eating!");
  }
  public void respond(){
-     System.out.println("Привіт,хазяїн. Я - " + nickname + ". Я скучив!");
+     System.out.println("Hello, host. I am  " + nickname + ". I missed!");
  }
  public void foul (){
-     System.out.println("Потрібно добре замести сліди...");
+     System.out.println("It is necessary to cover the tracks well...");
  }
 
     @Override
     public String toString() {
-        return "Pet{" +
-                "species='" + species + '\'' +
-                ", nickname='" + nickname + '\'' +
+        return  species + '\'' +
+                ", nickname='"+ nickname +'\'' +
                 ", age=" + age +
                 ", trickLevel=" + trickLevel +
                 ", habits=" + Arrays.toString(habits) +
@@ -82,5 +82,18 @@ private int trickLevel;
 
     public void setHabits(String[] habits) {
         this.habits = habits;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Pet pet = (Pet) o;
+        return age == pet.age && Objects.equals(species, pet.species) && Objects.equals(nickname, pet.nickname);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(species, nickname, age);
     }
 }
