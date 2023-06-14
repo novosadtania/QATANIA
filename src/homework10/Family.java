@@ -20,11 +20,6 @@ public class Family {
         this.father.setFamily(this);
     }
 
-    public Family(Human mother, Human father, Human[] children) {
-        this.mother = mother;
-        this.father = father;
-        this.children = children;
-    }
 
     public int countFamily() {
         return 2 + children.length;
@@ -97,11 +92,6 @@ public class Family {
                 '}';
     }
 
-    public Family(Human mother, Human[] children, Pet pet) {
-        this.mother = mother;
-        this.children = children;
-        this.pet = pet;
-    }
 
     public String getFamilyName() {
         return familyName;

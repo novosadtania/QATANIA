@@ -25,6 +25,15 @@ public class Human {
         this.iq = iq;
     }
 
+    public Human(String name, String surname, int year) {
+        this.name = name;
+        this.surname = surname;
+        this.year = year;
+    }
+
+    public Human() {
+    }
+
     public Family getFamily() {
         return family;
     }
@@ -33,15 +42,15 @@ public class Human {
         this.family = family;
     }
 
-    public void greetPet (Pet pet){
+    public void greetPet(Pet pet) {
         System.out.println("Hi, " + pet.getNickname() + "!");
     }
 
-    public void  describePet (Pet pet){
+    public void describePet(Pet pet) {
         if (pet.getTrickLevel() > 50) {
             System.out.println("I have a  " + pet.getSpecies() + " , he is " + pet.getAge() + " years old,he is very cunning");
         } else if (pet.getTrickLevel() < 50) {
-            System.out.println("I have a  " + pet.getSpecies() + " , he is " +pet.getAge() + " years old,he is almost not cunning");
+            System.out.println("I have a  " + pet.getSpecies() + " , he is " + pet.getAge() + " years old,he is almost not cunning");
         }
     }
 
@@ -53,18 +62,8 @@ public class Human {
                 ", year=" + year +
                 ", iq=" + iq + ", " +
                 "schedule=[[Monday,go to work]]," +
-                "[[Tuesday,go walk]]"+
-               '}';
-    }
-
-
-      public Human(String name, String surname, int year) {
-        this.name = name;
-        this.surname = surname;
-        this.year = year;
-    }
-
-    public Human() {
+                "[[Tuesday,go walk]]" +
+                '}';
     }
 
     public String getName() {
