@@ -24,15 +24,15 @@ public class ArrayMethod {
         return number;
     }
 
-    static int getArrayIndex(int number) throws DoubleExcept {
+    static int getArrayIndex(int number) throws LargeIndex {
         int[] array = new int[31];
         if (number > array.length) {
-            throw new DoubleExcept();
+            throw new LargeIndex();
         }
         return number;
     }
 
-    public void arrayMethod() throws UnderZeroException, DoubleExcept {
+    public void arrayMethod() throws UnderZeroException, LargeIndex {
         System.out.println("Введіть індекс масиву від 0 до 30 : ");
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();

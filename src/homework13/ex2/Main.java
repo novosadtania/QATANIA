@@ -5,7 +5,7 @@ public class Main {
         ArrayMethod arrayMethod = new ArrayMethod();
         try {
             arrayMethod.arrayMethod();
-        } catch (UnderZeroException | DoubleExcept e) {
+        } catch (UnderZeroException | LargeIndex e) {
             System.err.println(e.getMessage());
         }
     }
